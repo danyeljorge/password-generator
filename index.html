@@ -4,9 +4,39 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link rel="stylesheet" href="./asset/css/style.css" />
-    <script src="./asset/js/script.js" defer></script>
 
     <title>Gerador de Senha Aleatória</title>
   </head>
-  <body></body>
+  <body>
+    <main id="conteiner">
+      <h1 class="titulo">Gerador de Senhas</h1>
+      <p>Gere sua Senha Aleatória e Forte com segurança!</p>
+      <div class="gerador">
+        <input
+          type="text"
+          id="senha"
+          placeholder="Clique no botão para gerar uma senha"
+          readonly
+        />
+        <!--"readonly = não permite que o usuário altere o valor do input" -->
+        <button class="btn" id="gerarSenha" onclick="gerarSenha()">
+          Gerar Senha
+        </button>
+        <button
+          class="btn"
+          id="copiarSenha"
+          onclick="copiarSenha()"
+          style="display: none"
+        >
+          Copiar Senha
+        </button>
+      </div>
+    </main>
+    <footer id="rodape">
+      <a href="https://danyeljorge.github.io/meu-portifolio/" target="_blank"
+        ><img src="./asset/img/logo.png" alt="Logo Dev Daniel"
+      /></a>
+    </footer>
+    <script src="./asset/javascript/script.js"></script>
+  </body>
 </html>
